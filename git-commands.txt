@@ -1,0 +1,51 @@
+git init 
+git clone path(/../..)
+git status
+
+//create folder
+mkdir myFolder
+
+//create file
+touch three.txt 
+
+//find current folder
+pwd
+
+//go back 
+cd ../
+
+//go forward 
+cd myFolder(folderName)
+
+//push stage
+git add --all
+git add -A
+
+//push stage current folder
+git add .
+
+//push stage all without deleted item
+git add *
+git add *.txt
+
+//push stage indivisual item
+git add myFolder/three.txt
+
+//go back local(Unmodified)
+git reset 
+
+//Commite ?? - Untracked files, A - Files added to stage, M - Modified files, D - Deleted files
+git commit -m "I have made some changes" "elias@gmail.com"
+git commit -a -m "I have made some changes" "elias@gmail.com"
+
+//To view the history of commits for a repository, you can use the log command:
+git log
+
+//After commit go back 
+git reset HEAD~ 
+
+//Delete item fourcefully
+git rm one.txt -f
+git rm folderName
+git rm -r folderName(Recursibe nested folder rmv)
+
